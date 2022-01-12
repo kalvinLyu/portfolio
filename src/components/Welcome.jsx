@@ -3,7 +3,6 @@ import { Container, Col } from "react-bootstrap";
 import "./styles/styles.css";
 import { useEffect, useRef } from "react";
 import { init } from "ityped";
-import ArrowDropDownCircle from '@mui/icons-material/ArrowDropDownCircle';
 
 function Welcome() {
     const messageRef = useRef();
@@ -19,17 +18,16 @@ function Welcome() {
     }, []);
 
     return(
-        <div className="welcomeWrapper">
-            <Container className="px-10 m-0">
+        <div className="welcomeWrapper" id="home">
+            <Container className="m-0">
                 <Col>
-                    <div className="welcomeMessage">
+                    <div className="header">
                         <h2>Hello!</h2>
                         <h1>I'm <span ref={messageRef}></span></h1>
                         <h3>Computer Scientist</h3>
                     </div>
                 </Col>
             </Container>
-            <div><ArrowDropDownCircle /></div>
         </div>
     );
 }

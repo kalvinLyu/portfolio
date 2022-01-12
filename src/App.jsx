@@ -2,13 +2,21 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './app.css';
 import Welcome from "./components/Welcome";
-import Nav from "./components/Nav";
+import NavigationBar from "./components/NavigationBar";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Welcome />
-      <Nav />
+      <NavigationBar />
+      <About />
+      <Projects />
+      <Skills />
+      <Contact />
       {console.log("https://kalvinlyu.github.io/portfolio/")}
     </div>
   );
