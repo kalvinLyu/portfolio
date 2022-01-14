@@ -20,7 +20,7 @@ function Welcome() {
     return(
         <div className="welcomeWrapper" id="home">
             <Container className="m-0">
-                <Col>
+                <Col xs={12}>
                     <div className="header">
                         <h2>Hello!</h2>
                         <h1>I'm <span ref={messageRef}></span></h1>
